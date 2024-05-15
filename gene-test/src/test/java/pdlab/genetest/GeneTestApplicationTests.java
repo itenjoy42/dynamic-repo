@@ -1,0 +1,13 @@
+package pdlab.genetest;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
+
+@SpringBootTest
+class GeneTestApplicationTests {
+
+	@Test
+	void contextLoads() {
+	}
+
+}
