@@ -1,0 +1,146 @@
+
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-image: url('application-bridge.png'); /* 배경 이미지 경로 설정 */
+        background-size: cover; /* 배경 이미지를 화면에 맞게 조절 */
+        background-position: center; /* 배경 이미지를 가운데로 정렬 */
+       
+    }
+    header {
+        background-color: rgba(0, 0, 0, 0.5); /* 투명한 배경색 추가 */
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+        /* margin-bottom:  0px;*/ /* 헤더와 로그인 섹션 간격 설정 */
+    }
+    h1 {
+        margin-top: 0; /* 기본 마진 제거 */
+        margin-bottom: 0px; /* 헤더와 로그인 섹션 간격 설정 */
+    }
+    .container {
+        width: calc(100% - 300px); /* 사이드바 너비 제외한 나머지 영역을 차지하도록 설정 */
+        float: left; /* 왼쪽 정렬 */
+        margin: 10px auto 0; /* 위쪽에 30px의 여백 추가 */
+        padding: 20px;
+        background-color: rgba(255, 255, 255, 0.8); /* 투명한 배경색 추가 */
+        border-radius: 10px; /* 모서리를 둥글게 만듦 */
+        text-align: center; /* 텍스트 가운데 정렬 */
+    }
+
+    .container h2 {
+        margin-top: 70px; /* <h2> 위에 80px의 여백 추가 */
+    }
+    
+    aside.login-sidebar {
+        width: 300px;
+        float: right; /* 오른쪽 정렬 */
+        padding: 20px;
+        background-color: #c377d1; /* 배경 색상을 ㅇㅇ색으로 지정 */
+        color: #fff; /* 텍스트 색상을 흰색으로 지정 */
+        position: fixed; /* 고정 위치 설정 */
+        top: 82px; /* 페이지 상단에 고정 */
+        right: 0; /* 페이지 오른쪽에 고정 */
+    }
+    
+    .login-form {
+        text-align: left;
+        position: relative;
+    }
+    
+    .input-group {
+        margin-bottom: 50px;
+        display: flex; /* 아이디와 비밀번호를 한 줄에 표시하기 위해 Flexbox 사용 */
+        justify-content: flex-start;
+        /* 옵션으로 space-between; /* 아이디와 비밀번호를 양 끝으로 정렬 */
+    }
+    
+    .input-group label {
+        display: block; /* 라벨을 블록 요소로 설정하여 아래로 정렬 */
+        text-align: right; /* 아이디와 비밀번호 라벨을 오른쪽 정렬 */
+        flex-basis: 30%; /* 아이디와 비밀번호 입력란의 너비를 조정하기 위해 Flex 기능 사용 */
+        margin-right: 10px; /* 라벨과 입력란 사이의 간격 조정 */
+    }
+    
+    .input-group input {
+        flex-grow: 1; /* 입력란을 가능한 최대 크기로 확장 */
+        width: calc(100% - 10px); /* 로그인 버튼을 고려하여 입력란 너비 조절 */
+        padding: 10px;
+        margin-top: 5px; /* 위쪽 여백 추가 */
+        border: none;
+        border-radius: 5px;
+    }
+
+    .input-group h2 {
+        margin-top: 20px;
+        margin-bottom: 10px;
+        font-size: 18px;
+    }
+    
+    .input-group input[type="submit"] {
+        width: 30px; /* 로그인 버튼의 너비 조정 */; 
+        padding: 10px;
+        margin-top: 5px; /* 위쪽 여백 추가 */
+        border: none;
+        border-radius: 5px;
+        background-color: #a036a5;
+        color: #fff; /* 텍스트 색상을 흰색으로 지정 */
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    
+    .input-group input[type="submit"]:hover {
+        background-color:#7b1fa2; /* 버튼에 호버 효과 지정 */
+    }
+
+    .input-group input[type="text"] {
+        width: 70px; /* 원하는 너비로 설정하세요 */
+        padding: 5px;
+        margin-right: 5px; /* 라벨과 입력란 사이의 간격 조정 */
+        border: none;
+        border-radius: 5px;
+    }
+
+    .input-group input[type="password"] {
+        width: 70px; /* 원하는 너비로 설정하세요 */
+        padding: 10px;
+        margin-right: 5px; /* 라벨과 입력란 사이의 간격 조정 */
+        border: none;
+        border-radius: 5px;
+    }
+    
+
+    .search-section {
+        margin-top: 20px;
+    }
+    
+    .login-sidebar h2 {
+        font-size: 18px; /* 원하는 폰트 크기로 설정하세요 */
+    }
+    
+    
+    .search-section input[type="text"],
+    .search-section input[type="submit"] {
+        width: 90%;
+        padding: 10px;
+        margin-top: 5px;
+        border: none;
+        border-radius: 5px;
+    }
+    
+    p {
+        line-height: 1.6;
+    }
+    footer {
+        background-color: rgba(0, 0, 0, 0.5); /* 투명한 배경색 추가 */
+        color: #fff;
+        text-align: center;
+        padding: 10px 0;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        clear: both; /* float을 해제하여 footer가 container를 따라가도록 설정 */
+    }
+    /* 이곳에 추가적인 스타일이 있다면 여기에 작성하면 됩니다. */
